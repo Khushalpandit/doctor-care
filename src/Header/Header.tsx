@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useNavigate, Link } from "react-router-dom";
+import { NavLink, useNavigate, Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate(); // Hook for navigation
+  const location = useLocation(); // Hook to get current location
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 50);
   };
-  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -17,6 +17,13 @@ const Header: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleButtonClick = () => {
+    // You can use the location here if needed
+    console.log("Current location:", location.pathname);
+    // For example, navigate to another route or perform some action
+    navigate("/Module1");
+  };
 
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
@@ -29,8 +36,6 @@ const Header: React.FC = () => {
           <NavLink to="/" className="navbar-brand">
             Doctor<b>Care</b>
           </NavLink>
-          {/* Use Link from react-router-dom for navigation */}
-          <NavLink to="/Module1" className="navbar-brand"></NavLink>
 
           <div className="collapse navbar-collapse navbarNav" id="navbarNav">
             <ul className="navbar-nav">
@@ -79,27 +84,23 @@ const Header: React.FC = () => {
                 </ScrollLink>
               </li>
               <li className="d-lg-none">
-                <NavLink
-                  to="/Module1"
+                <button
                   className="btn Agendar navbarNav"
-                  role="button"
+                  onClick={handleButtonClick}
                   id="navbarNav1"
-                  aria-disabled="true"
                 >
                   Schedule appointment
-                </NavLink>
+                </button>
               </li>
             </ul>
           </div>
-          <NavLink
-            to="/Module1"
+          <button
             className="btn d-none d-lg-block Agendar navbarNav"
-            role="button"
+            onClick={handleButtonClick}
             id="navbarNav1"
-            aria-disabled="true"
           >
             Schedule appointment
-          </NavLink>
+          </button>
         </div>
       </nav>
     </div>
