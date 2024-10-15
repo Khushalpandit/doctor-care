@@ -3,7 +3,7 @@ import React from "react"; // rafce
 export const HeroSection: React.FC = () => {
   return (
     // Add return statement
-    <div className="hero-section mt-2">
+    <div className="hero-section mt-3">
       <div className="container mx-auto align-items-center row d-flex justify-content-between">
         <div className="text col-12 col-md-6">
           <div className="text-1 mt-2">WELCOME TO DOCTORCARE👋</div>

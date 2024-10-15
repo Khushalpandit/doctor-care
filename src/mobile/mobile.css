@@ -1,510 +1,177 @@
-@media (min-width: 900px) and (max-width: 1212px) {
-    /* Styles for tablets */
-    /* Header 1 */
-/* Base navbar styles */
-/* Navbar styles */
-.navbar {
-  background-color: #DCE9E2; /* Original color */
-  color: rgb(11, 158, 99) ;
-  position: fixed; /* Fixed position */
-  /* width: 100%;  Ensure it spans the full width */ 
-  z-index: 1000; /* Keep it above other content */
-  transition: background-color 0.5s; /* Smooth transition */
+/* Base styles remain unchanged */
+
+@media (max-width: 1212px) and (min-width: 900px) {
+  /* Styles for tablets */
 }
 
-.navbar-scrolled {
-  background-color: #00856F;
-  color: rgb(236, 241, 239) ; /* New color when scrolled */
-}
-/* Navbar styles */
-.navbar {
-  background-color: #DCE9E2; /* Original color */
-  color: aliceblue;
-  transition: background-color 0.5s; /* Smooth transition */
-}
-
-/* Scrolled navbar styles */
-.navbar-scrolled {
-  background-color: #00856F; /* New color when scrolled */
-}
-
-/* Default nav item styles */
-.nav-link {
-  color: #00856F; /* Original link color */
-  transition: color 0.3s; /* Smooth color transition */
-}
-
-/* Scrolled nav item styles */
-.navbar-scrolled .nav-link {
-  color:  #FFFFFF;
-  ; /* Change color when scrolled (example: gold) */
-}
-
-/* Other styles can remain the same */
-
-/* Navbar brand styles */
-.navbar-brand {
-  color: #00856F;
-  /* padding-left: 100px; */
-}
-.navbar-scrolled .navbar-brand{
-  color:#FFFFFF ;
-}
-/* Navbar item styles */
-.nav-item {
-  justify-content: center;
-}
-
-.navbar-collapse {
-  justify-content: center;
-}
-
-.btn-1 {
-  padding-right: 90px;
-}
-
-/* Header 2 styles */
-.header-2 .navbar {
-  background-color: #DCE9E2; /* Same original color for header-2 */
-  color: #00856F; /* Change the color for header-2 nav items */
-}
-
-.header-2 .nav-item {
-  color:#00856F; /* Change nav item color */
-}
-
-.header-2 .navbar-brand {
-  color: #FFFFFF; /* Keeping brand color consistent */
-}
-
-.header-2 .nav-link {
-  color: #00856F; /* Set link color */
-}
-
-.header-2 .nav-link:hover {
-  color: #005f50; /* Optional: add hover effect */
-}
-
-/* Agenda button styles */
-.ram{
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px 10px; 
-  color: white;
-  text-decoration: none;
-}
-.Agendar {
-  border: 1px solid #005f50;
-  border-radius: 20px;
-  padding: 5px 10px; 
-  background-color: transparent;
-  text-decoration: none;
-  /* margin-right: 100px; */
-  color: #005f50;
-
-}
-.navbar-scrolled .Agendar {
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px 10px; 
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  /* margin-right: 100px; */
-}
-
-/* hero section */
-
-.hero-section {
-  background-color: rgba(220, 233, 226, 1);
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.text {
-  width: 605px;
-  padding: 0px 0px 0px 100px;
-}
-
-.text-1 {
-  font-family: DM Sans;
-  font-weight: bold;
-  color: rgba(0, 133, 111, 1);
-  font-size: 20px;
-}
-
-.text-2 {
-  color: rgba(33, 37, 41, 1);
-  font-weight: bold;
-  font-size: 38px;
-}
-
-.text-3 {
-  font-size: 19px;
-}
-
-.button {
-  margin-top: 15px;
-  background-color: #00856F;
-  border-color: #00856F !important;
-}
-
-.bi-whatsapp {
-  color: #FFFFFF !important;
-}
-
-.button:hover .bi-whatsapp {
-  color: #00856F !important;
-}
-
-.img-1 {
-  width: 420px;
-  height: 550px;
-}
-  
-  /* section-2  */
-
-  .section-2 {
-    background-color: rgba(247, 249, 249, 1); /* Fixed RGBA value */
-  }
-  
-  .head-text {
-    padding-top: 150px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #00856F;
-  }
-  
-  .title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-  
-  /* Cards CSS */
-  .services a {
-    text-decoration: none;
-  }
-  
-  .services .service-box {
-    text-align: center;
-  }
-  
-  .services .service-box h2 {
-    color: #222;
-    font-size: 20px;
-    padding-top: 10px;
-  }
-  
-  .services a .service-box:hover h2 {
-    color: #00856F;
-  }
-  
-  .services .investor-box {
-    background-color: #fff;
-    padding: 20px;
-    width: 100%;
-    min-height: 150px;
-    display: block;
-    position: relative;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .services .investor-box h2 {
-    font-size: 20px;
-  }
-  
-  .services .investor-box .flip-view {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    left: -10%;
-    padding: 20px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: all ease-in-out 333ms;
-  }
-  
-  .services .investor-box a {
-    color: rgba(0, 133, 111, 1);
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .services .investor-box:hover .flip-view {
-    left: 0;
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .khushal {
-    justify-content: center;
-  }
-  
-  .bi {
-    color: #00856F;
-  }
-  /* section-3 css */
-  .section-3 {
-    background-color: #FFFAF1;
-  }
-  
-  .middle-text {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52.08px;
-  }
-  
-  .head-text {
-    color: #00856F;
-    font-size: 20px;
-  }
-  
-  .img-man {
-    margin: 60px 0px 0px 10px;
-  }
-  
-  .more {
-    background-color: #00856F;
-    color: #fff;
-    border-color: #00856F !important;
-    border-radius: 26px;
-  }
-  
-  .more-whatsapp {
-    color: #fff !important;
-  }
-  
-  .more:hover .bi-whatsapp {
-    color: #00856F !important;
-  }
-  /* footer-css */
-
-  .footer {
-    background-color: #00856F;
-  }
-  
-  .f-text {
-    margin: 24px 0px 0px 0; /* Adjusted for mobile */
-    line-height: 12px;  
-    color: #fff;
-  }
-  
-  .logo {
-    margin: 10px 0px 0px 0; /* Adjusted for mobile */
-  }
-  
-  .f-icons {
-    margin: 64px 0 0 0; /* Removed left margin for mobile */
-    color: #fff;
-    padding: 30px;
-    letter-spacing: 24px;
-  }
-  
-  .f-icons:hover {
-    background-color: #00856F;
-  }
-  
-  .ff {
-    color: #fff;
-  }
-  
-  /* z-index */
-  .z-index {
-    background-color: #FFFAF1;
-    z-index: 10; /* Corrected z-index value */
-    position: absolute; /* Positioning for desktop */
-    align-items: center;
-    margin: 0 auto;
-    left: 7%;
-    bottom: 45px;
-    border-radius: 8px;
-  }
-  }
-  
-  @media (max-width: 768px) {
-    .text {
+@media (max-width: 900px) {
+  .text {
       width: 100%;
       padding: 0 20px;
-    }
-    
-  
-    .text-1 {
+  }
+
+  .text-1 {
       font-size: 18px;
       margin-top: 10px;
       align-items: center;
-    }
-  
-    .text-2 {
+  }
+
+  .text-2 {
       font-size: 28px;
       align-items: center;
-    }
-  
-    .text-3 {
+  }
+
+  .text-3 {
       font-size: 16px;
       align-items: center;
-    }
-  
-    .img-1 {
+  }
+
+  .img-1 {
       width: 100%;
       height: auto;
-    }
-    /* /* services section css */ 
-    .head-text {
-        padding-top: 100px;
-        font-size: 12px;
-      }
-    
-      .title {
-        font-size: 32px;
-        text-align: center;
-        padding: 20px;
-      }
-    
-      .services .investor-box {
-        min-height: 120px;
-        padding: 15px;
-      }
-    
-      .services .investor-box h2 {
-        font-size: 18px;
-      }
-    
-      .services .investor-box a {
-        font-size: 18px;
-      }
-    
-      .services .row {
-        display: col;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    
-      .services .col-md-3 {
-        flex: 0 0 45%; /* Two columns on medium devices */
-        max-width: 45%; /* Two columns on medium devices */
-        margin-bottom: 20px; /* Spacing between rows */
-      }
-      /* z-index css */
-      .z-index {
-        left: 0; /* Full width on mobile */
-        right: 0; /* Allow stretching to the right */
-        bottom: -406px; /* Adjusted bottom margin */
-        margin: 0 0px; /* Add some horizontal margin */
-      }
-      
-      .text-center h1 {
-        font-size: 2rem; /* Smaller font size on mobile */
-      }
-    
-      .text-success {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-      }
-
-      .section-2{
-        margin-top: 250px;
-      }
-
-      /* section-3 css */
-      .middle-text {
-        font-size: 28px; /* Smaller font size on mobile */
-        line-height: 36px; /* Adjust line height for better spacing */
-      }
-    
-      .head-text {
-        font-size: 18px; /* Smaller head text for mobile */
-        padding: 40px;
-      }
-    
-      .img-man {
-        margin: 30px 0px 0px 0px; /* Adjust margin for the image */
-      }
-    
-      .section-3 {
-        padding: 20px 0; /* Add some padding for mobile */
-      }
-
-
-  }
- 
-
- 
-  @media (max-width: 576px) {
-    .text-1 {
-      font-size: 16px;
-      padding-top: 22px;
-      text-align: center;
-    }
-  
-    .text-2 {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    .text-3 {
-      font-size: 14px;
-      text-align: center;
-    }
-  
-    
-    .z-index {
-      left: 0; /* Full width on mobile */
-      right: 0; /* Allow stretching to the right */
-      bottom: -495px; /* Adjusted bottom margin */
-      margin: 0 0px; /* Add some horizontal margin */
-    }
-    /* services section css */
-    .head-text {
-    padding-top: 80px;
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .services .investor-box {
-    min-height: 100px;
-    padding: 10px;
-  }
-
-  .services .investor-box h2 {
-    font-size: 16px;
-  }
-
-  .services .investor-box a {
-    font-size: 16px;
-  }
-
-  .services .col-md-3 {
-    flex: 0 0 100%; /* One column on small devices */
-    max-width: 100%; /* One column on small devices */
-  }
-   /* section-3 css */
-   .middle-text {
-    font-size: 24px; /* Even smaller font size on extra small devices */
-    line-height: 32px; /* Further adjust line height */
   }
 
   .head-text {
-    font-size: 16px; /* Smaller head text for extra small devices */
-    padding-top: 40px ;
+      padding-top: 100px;
+      font-size: 12px;
+  }
+
+  .title {
+      font-size: 32px;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .services .investor-box {
+      min-height: 120px;
+      padding: 15px;
+  }
+
+  .services .investor-box h2 {
+      font-size: 18px;
+  }
+
+  .services .investor-box a {
+      font-size: 18px;
+  }
+
+  .services .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .services .col-md-3 {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-bottom: 20px;
+  }
+
+  .z-index {
+      left: 0;
+      right: 0;
+      bottom: -406px;
+      margin: 0 0px;
+  }
+
+  .text-center h1 {
+      font-size: 2rem;
+  }
+
+  .text-success {
+      font-size: 0.9rem;
+  }
+
+  .section-2 {
+      margin-top: 250px;
+  }
+
+  .middle-text {
+      font-size: 28px;
+      line-height: 36px;
+  }
+
+  .head-text {
+      font-size: 18px;
+      padding: 40px;
   }
 
   .img-man {
-    margin: 20px 0; /* Further adjust margin for the image */
+      margin: 30px 0 0 0;
   }
 
-
+  .section-3 {
+      padding: 20px 0;
+  }
 }
+
+@media (max-width: 576px) {
+  .text-1 {
+      font-size: 16px;
+      padding-top: 22px;
+      text-align: center;
+  }
+
+  .text-2 {
+      font-size: 24px;
+      text-align: center;
+  }
+
+  .text-3 {
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .z-index {
+      bottom: -346px;
+  }
+
+  .head-text {
+      padding-top: 80px;
+      font-size: 10px;
+      text-align: center;
+  }
+
+  .title {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .services .investor-box {
+      min-height: 100px;
+      padding: 10px;
+  }
+
+  .services .investor-box h2 {
+      font-size: 16px;
+  }
+
+  .services .investor-box a {
+      font-size: 16px;
+  }
+
+  .services .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .middle-text {
+      font-size: 24px;
+      line-height: 32px;
+  }
+
+  .head-text {
+      font-size: 16px;
+      padding-top: 40px;
+  }
+
+  .img-man {
+      margin: 20px 0;
+  }
+}
+
 @media (max-width: 450px) {
   .z-index {
-    bottom: -180px; /* Adjusted bottom margin */
+      bottom: -374px;
   }
-} 
+}

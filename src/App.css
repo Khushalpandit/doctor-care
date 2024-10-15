@@ -205,9 +205,15 @@ color:#DCE9E2;
     padding: 20px;
     width: 100%;
     min-height: 150px;
-    display: block;
+    /* display: block; */
     position: relative;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+    
+  }
+  .flip-view {
+    margin-top: 10px; /* Add margin for spacing */
   }
   
   .services .investor-box h2 {
@@ -393,3 +399,12 @@ color:#DCE9E2;
     margin: 150px 1px 200px 1px;
   }
   
+  /* In your CSS file */
+.navbar-toggler-icon {
+  width: 20px; /* Adjust this value as needed */
+  height: 20px; /* Adjust this value as needed */
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem; /* Adjust padding to center the icon */
+}

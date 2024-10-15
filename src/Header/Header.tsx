@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useNavigate, Link, useLocation } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Header: React.FC = () => {
@@ -37,7 +37,19 @@ const Header: React.FC = () => {
             Doctor<b>Care</b>
           </NavLink>
 
-          <div className="collapse navbar-collapse navbarNav" id="navbarNav">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <ScrollLink
@@ -83,19 +95,11 @@ const Header: React.FC = () => {
                   Testimonials
                 </ScrollLink>
               </li>
-              <li className="d-lg-none">
-                <button
-                  className="btn Agendar navbarNav"
-                  onClick={handleButtonClick}
-                  id="navbarNav1"
-                >
-                  Schedule appointment
-                </button>
-              </li>
             </ul>
           </div>
+
           <button
-            className="btn d-none d-lg-block Agendar navbarNav"
+            className="btn d-none d-lg-block Agendar"
             onClick={handleButtonClick}
             id="navbarNav1"
           >
